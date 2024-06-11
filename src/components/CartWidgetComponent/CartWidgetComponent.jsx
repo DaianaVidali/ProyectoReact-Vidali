@@ -20,4 +20,4 @@ const CartWidgetComponent = () => {
   )
 }
 
-export default CartWidgetComponent
+export default CartWidgetCompon
