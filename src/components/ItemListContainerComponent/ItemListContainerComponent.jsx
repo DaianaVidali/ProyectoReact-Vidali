@@ -1,18 +1,17 @@
-import React from 'react'
-
-const ItemListContainerComponent = ({greeting}) => {
- const customStye = {
-    color: "white",
-    fontSize: "2rem",
-    margin: "auto",
-    width: "100vw",
-    height:"100vh",
-    display: "flex",
-    justifyContent: "center",
+const ItemListContainerComponent = ({ greeting }) => {
+   const customStyles = {
+     display: "flex",
+     justifyContent: "center",
+     alignItems: "center",
+     color: "white",
+     fontSize: "2rem",
+     margin: "auto",
+     width: "100vw",
+     height: "80vh",
+   };
+ 
+ 
+   return <div className="itemListContainer">{greeting}</div>;
  };
-    return (
-    <div style={customStye}>{greeting} </div>
-  )
-}
-
-export default ItemListContainerComponent
+ 
+ export default ItemListContainerComponent;

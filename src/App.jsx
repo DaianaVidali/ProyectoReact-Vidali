@@ -1,26 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import NavBarComponent from './components/NavBarComponent';
-import ItemListContainerComponent from './components/ItemListContainerComponent/ItemListContainerComponent';
+import React from "react";
 
+import NavBarComponent from "./components/NavBarComponent/NavBarComponent";
+import ItemListContainerComponent from "./components/ItemListContainerComponent/ItemListContainerComponent";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  
-
-  return  (
+  return (
     <>
-      <NavBarComponent/>
-      <ItemListContainerComponent greeting="Bienvenidos a Morena. Estamos trabajando para que tenga una mejor experiencia"/>
-      
-
+      <NavBarComponent />
+      <ItemListContainerComponent greeting="Bienvenidos a mi pagina de venta Ezio Auditore"/>
     </>
-  ) 
-   
+  );
 }
 
-export default App
+export default App;
