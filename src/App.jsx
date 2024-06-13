@@ -1,17 +1,19 @@
-import React from "react";
+import React from 'react'
+import NavBarComponent from './components/NavBarComponent';
+import ItemListContainerComponent from './components/ItemListContainerComponent/ItemListContainerComponent';
 
-import NavBarComponent from "./components/NavBarComponent/NavBarComponent";
-import ItemListContainerComponent from "./components/ItemListContainerComponent/ItemListContainerComponent";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+
+const App = () => {
   return (
     <>
-      <NavBarComponent />
-      <ItemListContainerComponent greeting="Bienvenidos a mi pagina de venta Ezio Auditore"/>
-    </>
-  );
+      <NavBarComponent/>
+      <ItemListContainerComponent greeting={"Bienvenidos a Morena"}/>
+   </>
+
+  )
 }
 
-export default App;
+export default App
