@@ -1,12 +1,22 @@
+
 import React from 'react'
+import "./ItemListContainerComponent.css"
 
 const ItemListContainerComponent = ({greeting}) => {
+    const customStyle={
+        color:"white",
+        fontSize:"2rem",
+        margin:"auto",
+        width:"100vw",
+        height:"80vh",
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"Center"
 
-  const customStyles={color:"white", fontSize:"2rem"};
-
+    };
   return (
-    <div style={customStyles}>{greeting}</div>
-  )
-}
+    <div className="itemListContainer">{greeting}</div>
+  );
+};
 
 export default ItemListContainerComponent
