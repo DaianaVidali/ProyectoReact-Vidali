@@ -10,11 +10,12 @@ export const useProducts = () => {
            setProducts(response.data.products);
         })
          .catch((error)=>{
-            console.error(error)
+            console.error(error);
 
         });
 
-    });
+    }, []);
+
   return {products};
-}
+};
 

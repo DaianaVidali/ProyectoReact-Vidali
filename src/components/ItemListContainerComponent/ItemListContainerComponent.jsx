@@ -4,6 +4,7 @@ import "./ItemListContainerComponent.css"
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 const ItemListContainerComponent = ({products}) => {
     
@@ -16,7 +17,7 @@ const ItemListContainerComponent = ({products}) => {
             <Card.Body>
               <Card.Title>{product.title}</Card.Title>
               <Card.Text>{product.description}</Card.Text>
-              <Button variant='primary'>Go somewhere</Button>
+              <Link to={`/item/${product.id}  `}>Ir a detalle</Link>
             </Card.Body>
           </Card>
         );
