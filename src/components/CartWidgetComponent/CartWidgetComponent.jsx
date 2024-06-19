@@ -13,10 +13,10 @@ const CartWidgetComponent = () => {
   };
 
   return (
-    <>
+    <div>
      <FontAwesomeIcon icon={faCartShopping}style={customStyle} />
      <span style={customStyle}>0</span>
-    </>
+    </div>
   );
 };
 
