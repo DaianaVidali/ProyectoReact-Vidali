@@ -3,7 +3,8 @@ import {getAllProducts} from"../services/products";
 
 export const useProducts = () => {
     const[products, setProducts] = React.useState([]);
-
+    const[loading, setLoading] = React.useState(true);
+    
     React.useEffect(() => {
         getAllProducts()
          .then((response)=>{
@@ -12,10 +13,13 @@ export const useProducts = () => {
          .catch((error)=>{
             console.error(error);
 
-        });
+        })
+        .finally(() => {
+          setLoading(false);
+       });
 
     }, []);
 
-  return {products};
+  return {products, loading};
 };
 

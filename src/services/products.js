@@ -10,7 +10,7 @@ export async function getProductById (id) {
 }
 
 export async function getProductsByCategory (category) {
-    return axios.get(`'https://dummyjson.com/products/category/${category}`)
+    return axios.get(`https://dummyjson.com/products/category/${category}`)
 }
 
 export async function getAllCategories () {
